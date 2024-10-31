@@ -700,6 +700,7 @@ body {
             border-radius: 5px;
             overflow: hidden;
             background-color: var(--white-color);
+            box-shadow: 0 0 20px rgba(128, 128, 128, 0.2);
 
             >figure {
                 width: 100%;
@@ -764,6 +765,77 @@ body {
                     color: rgba(0, 0, 0, 0.4);
                     font-weight: 500;
                 }
+            }
+        }
+    }
+}
+
+/* pricing section */
+.pricing {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--back-color);
+
+    >strong {
+        color: var(--green-color);
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+    }
+
+    >h3 {
+        font-size: 4rem;
+        color: var(--black-color);
+        margin-bottom: 4rem;
+    }
+
+    >div {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        align-items: center;
+
+        >div {
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: var(--white-color);
+            box-shadow: 0 0 20px rgba(128, 128, 128, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            padding: 3rem;
+
+            >h5 {
+                font-weight: 500;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+            }
+
+            >span {
+                >sup {
+                    display: inline-block;
+                    color: rgba(0, 0, 0, 0.418);
+                    font-size: 3rem;
+                    transform: translateY(-20px);
+                }
+
+                >span {
+                    color: var(--green-color);
+                    font-size: 6rem;
+                    font-weight: bold;
+                }
+            }
+            >p{
+                text-align: center;
+                color: rgba(0, 0, 0, 0.459);
+                line-height: 2;
+            }
+            >.btn{
+                width: 100%;
             }
         }
     }
