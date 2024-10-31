@@ -358,6 +358,7 @@ body {
     }
 }
 
+/* courses section */
 .courses {
     padding-top: 10rem;
     padding-bottom: 10rem;
@@ -468,6 +469,92 @@ body {
     }
 }
 
+/* categories section */
+.categories {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--back-color);
+
+    >strong {
+        color: var(--green-color);
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+    }
+
+    >h3 {
+        font-size: 4rem;
+        color: var(--black-color);
+        margin-bottom: 4rem;
+    }
+
+
+    >article {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        >div {
+            border-radius: 3px;
+            box-shadow: 0 0 15px 0 rgba(128, 128, 128, 0.199);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            gap: 1rem;
+            background-color: var(--white-color);
+            transition: 0.4s;
+
+            >* {
+                transition: 0.4s;
+            }
+
+            >span {
+                font-size: 8rem;
+                color: var(--green-color);
+            }
+
+            >h4 {
+                font-size: 2rem;
+                font-weight: normal;
+                text-align: center;
+                text-transform: capitalize;
+            }
+
+            >p {
+                width: fit-content;
+                padding: 0.5rem 2rem;
+                background-color: #f8f8f8;
+                color: var(--green-color);
+                font-size: 1.2rem;
+                border-radius: 3px;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: var(--green-color);
+
+                >span,
+                >h4 {
+                    color: var(--white-color);
+                }
+
+                >p {
+                    background-color: var(--white-color);
+                }
+
+
+
+            }
+        }
+    }
+
+
+}
+
 /* button component */
 .btn {
     display: flex;
@@ -511,6 +598,7 @@ body {
 .btn-outline-secondary {
     border: 1px solid var(--green-color);
     color: var(--green-color);
+    box-shadow: 0 0 20px 0 rgba(128, 128, 128, 0.144);
 
     &:hover {
         background-color: var(--green-color);
