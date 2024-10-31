@@ -555,6 +555,120 @@ body {
 
 }
 
+/* testimonial section */
+.testimonial {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--back-color);
+
+    >strong {
+        color: var(--green-color);
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+    }
+
+    >h3 {
+        font-size: 4rem;
+        color: var(--black-color);
+        margin-bottom: 4rem;
+    }
+
+    >article {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+
+        >div {
+            padding: 3rem;
+            border-radius: 5px;
+            background-color: var(--white-color);
+            transition: 0.4s;
+
+            & * {
+                transition: 0.4s;
+            }
+
+            >figure {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                position: relative;
+
+                >.icon {
+                    display: flex;
+                    position: absolute;
+                    top: 60%;
+                    left: 20%;
+                    font-size: 2rem;
+                    color: var(--white-color);
+                    background-color: var(--green-color);
+                    padding: 1rem;
+                    border-radius: 50%;
+                    aspect-ratio: 1/1;
+                }
+
+                >img {
+                    width: 10rem;
+                    height: 10rem;
+                    border-radius: 50%;
+
+                }
+
+                >figcaption {
+                    text-transform: uppercase;
+
+                    >em {
+
+                        font-weight: bold;
+                        font-style: normal;
+                        color: #000;
+                        display: flex;
+                        margin-bottom: 2rem;
+                    }
+
+                    >p {
+                        color: var(--green-color);
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            >blockquote {
+                margin-top: 2rem;
+                text-align: justify;
+                color: rgba(0, 0, 0, 0.4);
+            }
+
+            &:hover {
+                background-color: var(--green-color);
+
+                >figure {
+                    >.icon {
+                        color: var(--green-color);
+                        background-color: var(--white-color);
+                    }
+
+                    >figcaption {
+
+                        >em,
+                        >p {
+                            color: #fff;
+                        }
+                    }
+                }
+
+                >blockquote {
+                    color: rgba(255, 255, 255, 0.5);
+                }
+            }
+        }
+    }
+}
+
 /* button component */
 .btn {
     display: flex;
