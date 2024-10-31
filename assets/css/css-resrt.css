@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* row */
+.row {
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+/* ion */
+.ion-ios-arrow-round-forward {
+    margin-left: 1rem;
+}
+
+/* flaticon */
+@font-face {
+    font-family: "flaticon";
+    src: url("../fonts/Flaticon.woff") format("woff");
+}
