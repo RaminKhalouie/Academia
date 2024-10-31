@@ -841,6 +841,57 @@ body {
     }
 }
 
+/* newsletter section */
+.newsletter{
+    justify-content: center;
+    padding: 10rem 2rem;
+    background-color: var(--green-color);
+    color:var(--white-color);
+
+    >.row{
+        gap: 5rem;
+        justify-content: center;
+        align-items: center;
+        >div{
+        
+            /* border: 1px solid red; */
+            &:first-of-type{
+                >h4{
+                    font-size: 2.7rem;
+                }
+                >p{
+                    color: rgba(255, 255, 255, 0.7);
+                }
+            }
+
+            &:last-of-type{
+                >div{
+                    display: flex;
+                    padding: 1rem ;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.719);
+                    >*{
+                        outline: none;
+                            border: none;
+                            background-color: transparent;
+                            color: #fff;
+                    }
+                    >input{
+                       
+                        color: #fff;
+                        flex-grow: 1;
+                        font-size: 2rem;
+                        &::placeholder{
+                            color: #fff;
+                            font-size: 1.3rem;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
 /* button component */
 .btn {
     display: flex;
