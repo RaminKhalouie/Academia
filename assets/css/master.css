@@ -358,6 +358,116 @@ body {
     }
 }
 
+.courses {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--back-color);
+
+    >strong {
+        color: var(--green-color);
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+    }
+
+    >h3 {
+        font-size: 4rem;
+        color: var(--black-color);
+        margin-bottom: 4rem;
+    }
+
+    >div {
+        width: 100%;
+        display: flex;
+        gap: 2rem;
+        /* border: 1px solid red; */
+
+        >article {
+            /* border: 1px solid blue; */
+            padding: 3rem;
+            background-color: var(--white-color);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            >div {
+                display: flex;
+                gap: 1rem;
+                margin-bottom: 3rem;
+
+                >span {
+                    display: flex;
+                    width: fit-content;
+                    height: fit-content;
+                    border-radius: 50%;
+                    font-size: 5rem;
+                    padding: 2rem;
+                    color: var(--white-color);
+                    background-color: var(--green-color);
+                    margin-top: 1rem;
+                }
+
+                >div {
+                    /* >* {
+                        border: 1px solid tomato;
+                    } */
+
+                    >h3 {
+                        font-size: 2.3rem;
+                        font-weight: bold;
+                        width: 70%;
+                        margin-bottom: 1rem;
+                        color: var(--black-color);
+                    }
+
+                    >.stars {
+                        color: var(--green-color);
+                        font-size: 1.2rem;
+                        margin-bottom: 1rem;
+                    }
+
+                    >figure {
+                        display: flex;
+                        gap: 2rem;
+                        align-items: center;
+
+                        >img {
+                            display: flex;
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+
+                        >figcaption {
+                            font-weight: bold;
+                            color: rgba(0, 0, 0, 0.4);
+                        }
+                    }
+
+                    >p {
+                        color: var(--green-color);
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            >p {
+                width: 100%;
+                padding: 1rem;
+                text-align: center;
+                background-color: #f8f8f8;
+                color: var(--green-color);
+                font-weight: bold;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
 /* button component */
 .btn {
     display: flex;
@@ -395,5 +505,15 @@ body {
     &:hover {
         background-color: var(--white-color);
         color: var(--black-color);
+    }
+}
+
+.btn-outline-secondary {
+    border: 1px solid var(--green-color);
+    color: var(--green-color);
+
+    &:hover {
+        background-color: var(--green-color);
+        color: var(--white-color);
     }
 }
