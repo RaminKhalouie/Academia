@@ -1048,6 +1048,120 @@ body {
     }
 }
 
+/* watermark component */
+.watermark {
+    width: 20rem;
+    height: 20rem;
+    position: fixed;
+    right: 5rem;
+    bottom: 5rem;
+    z-index: 999;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &::before {
+        content: '';
+        display: flex;
+        width: 17.5rem;
+        height: 17.5rem;
+        background-color: rgb(8, 55, 102);
+        position: absolute;
+        animation: watermark-back-animation 10s infinite alternate;
+    }
+
+    >img {
+        position: absolute;
+        width: 17rem;
+        height: 17rem;
+        object-fit: cover;
+        height: 17rem;
+        border-radius: 50%;
+        animation: watermark-animation 10s infinite alternate;
+    }
+
+    >figcaption {
+
+        >a {
+            display: flex;
+            color: rgb(8, 55, 102);
+            font-size: 2.5rem;
+            position: absolute;
+            left: 50%;
+            transition: 0.4s;
+
+            &:nth-of-type(1) {
+                top: 15%;
+            }
+
+            &:nth-of-type(2) {
+                top: 35%;
+                transition-delay: 0.2s;
+            }
+
+            &:nth-of-type(3) {
+                top: 55%;
+                transition-delay: 0.5s;
+            }
+
+            &:nth-of-type(4) {
+                top: 75%;
+                transition-delay: 0.8s;
+            }
+
+            &:hover {
+                color: dodgerblue;
+            }
+
+
+        }
+
+    }
+
+    &:hover>figcaption>a {
+        left: 0;
+    }
+}
+
+@keyframes watermark-animation {
+    0% {
+        border-radius: 67% 33% 43% 57% / 65% 60% 40% 35%;
+    }
+
+    35% {
+        border-radius: 37% 63% 43% 57% / 65% 60% 40% 35%;
+    }
+
+    65% {
+        border-radius: 57% 43% 34% 66% / 49% 46% 54% 51%;
+    }
+
+    100% {
+        border-radius: 57% 43% 60% 40% / 49% 46% 54% 51%;
+    }
+
+
+}
+
+@keyframes watermark-back-animation {
+    0% {
+        border-radius: 37% 63% 43% 57% / 65% 60% 40% 35%;
+    }
+
+    35% {
+        border-radius: 67% 33% 43% 57% / 65% 60% 40% 35%;
+    }
+
+    65% {
+        border-radius: 57% 43% 60% 40% / 49% 46% 54% 51%;
+    }
+
+    100% {
+        border-radius: 57% 43% 34% 66% / 49% 46% 54% 51%;
+    }
+}
+
 /* button component */
 .btn {
     display: flex;
