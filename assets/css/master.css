@@ -1050,6 +1050,7 @@ body {
 
 /* watermark component */
 .watermark {
+    --main-color:rgb(8, 55, 102);
     width: 20rem;
     height: 20rem;
     position: fixed;
@@ -1066,7 +1067,7 @@ body {
         display: flex;
         width: 17.5rem;
         height: 17.5rem;
-        background-color: rgb(8, 55, 102);
+        background-color: var(--main-color);
         position: absolute;
         animation: watermark-back-animation 10s infinite alternate;
     }
@@ -1080,12 +1081,21 @@ body {
         border-radius: 50%;
         animation: watermark-animation 10s infinite alternate;
     }
+    >h2{
+        position: absolute;
+        bottom: -5%;
+        text-transform: capitalize;
+        font-variant: small-caps;
+        color: var(--main-color);
+        font-size: 1.3rem;
+
+    }
 
     >figcaption {
 
         >a {
             display: flex;
-            color: rgb(8, 55, 102);
+            color: var(--main-color);
             font-size: 2.5rem;
             position: absolute;
             left: 50%;
